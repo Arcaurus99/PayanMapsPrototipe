@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">PayanMapsPrototipe</string>
-    <string name="title_activity_maps">MapsActivity</string>
+    <string name="app_name">PayanPrototipe</string>
+
+    <!-- TITLES MAIN -->
+    <string name="tourism">Tourism</string>
+    <string name="grastronomy">Gastronomy</string>
+    <string name="hotel">Hotel</string>
+    <string name="more">More</string>
+    <string name="events">Events</string>
+
 </resources>

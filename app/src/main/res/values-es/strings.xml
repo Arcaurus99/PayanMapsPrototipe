@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PayanPrototipe</string>
+    <string name="tourism">Turismo</string>
+    <string name="grastronomy">Gastronomía</string>
+    <string name="hotel">Hotelería</string>
+    <string name="more">Otros</string>
+    <string name="events">Eventos</string>
+</resources>
