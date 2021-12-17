@@ -6,4 +6,7 @@
     <string name="hotel">Hotelería</string>
     <string name="more">Otros</string>
     <string name="events">Eventos</string>
+    <string name="ecoGuide">Guía Ecológica</string>
+    <string name="cityGuide">Guía por Ciudad</string>
+    <string name="title_activity_maps">titulo</string>
 </resources>

@@ -8,4 +8,9 @@
     <string name="more">More</string>
     <string name="events">Events</string>
 
+    <!-- TITLES TOURISM WINDOW -->
+    <string name="ecoGuide">Ecologic Guide</string>
+    <string name="cityGuide">City Guide</string>
+    <string name="title_activity_maps">titulo</string>
+
 </resources>
