@@ -9,4 +9,8 @@
     <string name="ecoGuide">Guía Ecológica</string>
     <string name="cityGuide">Guía por Ciudad</string>
     <string name="title_activity_maps">titulo</string>
+    <string name="restaurants">Restaurantes</string>
+    <string name="typicalMeals">Comidas Típicas</string>
+    <string name="nightclubs">Discotecas</string>
+    <string name="pubs">Bares</string>
 </resources>

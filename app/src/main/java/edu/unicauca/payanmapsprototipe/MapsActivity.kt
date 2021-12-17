@@ -42,7 +42,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Add a marker in Sydney and move the camera
         val popayan = LatLng(2.4457222018962863, -76.6148691084224)
-        val zoom = 10
+        val zoom = 12.5
         mMap.addMarker(MarkerOptions().position(popayan).title("Popayán\n Road to the white city"))
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(popayan, zoom.toFloat()))
     }

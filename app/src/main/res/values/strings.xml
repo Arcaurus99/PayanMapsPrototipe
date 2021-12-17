@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">PayanPrototipe</string>
+    <string name="app_name">Payan</string>
+    <string name="title_activity_maps">Payan_Map</string>
 
     <!-- TITLES MAIN -->
     <string name="tourism">Tourism</string>
@@ -11,6 +12,13 @@
     <!-- TITLES TOURISM WINDOW -->
     <string name="ecoGuide">Ecologic Guide</string>
     <string name="cityGuide">City Guide</string>
-    <string name="title_activity_maps">titulo</string>
+
+    <!-- TITLES GASTRONOMY WINDOW -->
+    <string name="restaurants">Restaurants</string>
+    <string name="typicalMeals">Typical Meals</string>
+
+    <!-- TITLES OTHERS WINDOW -->
+    <string name="nightclubs">Restaurants</string>
+    <string name="pubs">Typical Meals</string>
 
 </resources>
