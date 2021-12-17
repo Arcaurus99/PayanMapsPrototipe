@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#fff</color>
     <color name="colorAccent">#fff</color>
     <color name="colorBlanco">#fff</color>
+    <color name="colorNegro">#000</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

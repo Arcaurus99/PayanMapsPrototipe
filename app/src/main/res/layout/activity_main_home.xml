@@ -18,11 +18,14 @@
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
+            <ImageButton
                 android:id="@+id/menu"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Menu" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_menu_24"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="225dp" />
         </FrameLayout>
 
         <FrameLayout
@@ -57,6 +60,7 @@
             app:layout_constraintTop_toBottomOf="@+id/navBar">
 
             <FrameLayout
+                android:id="@+id/btnTourism"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -64,7 +68,8 @@
                     android:id="@+id/imageTourism"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    tools:srcCompat="@drawable/p2turismo"
+                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:id="@+id/textTourism"
@@ -93,7 +98,8 @@
                         android:id="@+id/imageGastronomy"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                        tools:srcCompat="@drawable/p2gastronomia"
+                        android:scaleType="fitXY" />
 
                     <TextView
                         android:id="@+id/textGastronomy"
@@ -115,7 +121,8 @@
                         android:id="@+id/imageHotel"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                        tools:srcCompat="@drawable/p2hoteleria"
+                        android:scaleType="fitXY" />
 
                     <TextView
                         android:id="@+id/textHotel"
@@ -138,7 +145,8 @@
                     android:id="@+id/imageMore"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    tools:srcCompat="@drawable/p2otros"
+                    android:scaleType="fitXY" />
 
                 <TextView
                     android:id="@+id/textMore"
@@ -171,9 +179,10 @@
 
                 <ImageView
                     android:id="@+id/imageEvents"
-                    android:layout_width="wrap_content"
-                    android:layout_height="300dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@drawable/p2eventos"
+                    android:scaleType="fitXY" />
             </LinearLayout>
 
         </LinearLayout>
