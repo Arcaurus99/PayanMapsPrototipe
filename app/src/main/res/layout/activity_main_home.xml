@@ -30,7 +30,7 @@
             android:layout_height="70dp">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageLogoApp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
@@ -61,13 +61,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageTourism"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textTourism"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -90,7 +90,7 @@
                     android:layout_weight="1">
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/imageGastronomy"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         tools:srcCompat="@tools:sample/backgrounds/scenic" />
@@ -135,13 +135,13 @@
                 android:layout_marginTop="18dp">
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imageMore"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textMore"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
@@ -160,7 +160,7 @@
                 android:layout_marginTop="18dp">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textEvents"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/events"
@@ -170,7 +170,7 @@
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/imageEvents"
                     android:layout_width="wrap_content"
                     android:layout_height="300dp"
                     tools:srcCompat="@tools:sample/backgrounds/scenic" />

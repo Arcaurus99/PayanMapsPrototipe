@@ -32,11 +32,11 @@
             android:background="#000">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textTitleW"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/tourism"
+                android:text="@string/more"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -68,17 +68,17 @@
 
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageNightclubes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textNightclubes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/ecoGuide"
+                android:text="@string/nightclubs"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp"
                 android:textStyle="bold" />
@@ -90,17 +90,17 @@
             android:layout_marginTop="36dp">
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/imagePubs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textPubs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/cityGuide"
+                android:text="@string/pubs"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp"
                 android:textStyle="bold" />

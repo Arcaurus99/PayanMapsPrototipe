@@ -32,7 +32,7 @@
             android:background="#000">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textTitleW"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -68,13 +68,13 @@
 
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageRestaurants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textRestaurants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -90,13 +90,13 @@
             android:layout_marginTop="36dp">
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/imageTypMeals"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textTypMeals"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"

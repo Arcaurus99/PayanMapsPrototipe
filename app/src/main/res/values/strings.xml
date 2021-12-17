@@ -18,7 +18,7 @@
     <string name="typicalMeals">Typical Meals</string>
 
     <!-- TITLES OTHERS WINDOW -->
-    <string name="nightclubs">Restaurants</string>
-    <string name="pubs">Typical Meals</string>
+    <string name="nightclubs">Nightclubs</string>
+    <string name="pubs">Pubs</string>
 
 </resources>
