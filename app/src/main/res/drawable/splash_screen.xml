@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item tools:srcCompat="@drawable/inicio"/>
+    <item>
+        <ImageView
+            android:id="@+id/imageLogoApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:srcCompat ="@drawable/base" />
+    </item>
+</layer-list>
