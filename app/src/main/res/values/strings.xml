@@ -4,10 +4,13 @@
 
     <!-- TITLES MAIN -->
     <string name="tourism">Tourism</string>
-    <string name="grastronomy">Gastronomy</string>
+    <string name="gastronomy">Gastronomy</string>
     <string name="hotel">Hotel</string>
     <string name="more">More</string>
     <string name="events">Events</string>
+    <string name="menu">Menu</string>
+    <string name="maps">Maps</string>
+    <string name="user">User</string>
 
     <!-- TITLES TOURISM WINDOW -->
     <string name="ecoGuide">Ecologic Guide</string>

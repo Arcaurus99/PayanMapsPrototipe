@@ -20,12 +20,11 @@
 
             <ImageButton
                 android:id="@+id/menu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
                 app:srcCompat="@drawable/ic_baseline_menu_24"
-                tools:ignore="SpeakableTextPresentCheck"
-                tools:layout_editor_absoluteX="11dp"
-                tools:layout_editor_absoluteY="225dp" />
+                android:contentDescription="@string/menu"/>
         </FrameLayout>
 
         <FrameLayout
@@ -34,14 +33,23 @@
 
             <ImageView
                 android:id="@+id/imageLogoApp"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                tools:srcCompat="@drawable/base"
+                android:contentDescription="@string/app_name"/>
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="70dp"
             android:layout_height="70dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24"
+                android:contentDescription="@string/user"/>
         </FrameLayout>
     </LinearLayout>
 
@@ -69,7 +77,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     tools:srcCompat="@drawable/p2turismo"
-                    android:scaleType="fitXY"/>
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/tourism"/>
 
                 <TextView
                     android:id="@+id/textTourism"
@@ -87,7 +96,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:layout_marginTop="18dp">
+                android:layout_marginTop="18dp"
+                android:baselineAligned="false">
 
                 <FrameLayout
                     android:layout_width="0dp"
@@ -99,14 +109,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         tools:srcCompat="@drawable/p2gastronomia"
-                        android:scaleType="fitXY" />
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/gastronomy" />
 
                     <TextView
                         android:id="@+id/textGastronomy"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="@string/grastronomy"
+                        android:text="@string/gastronomy"
                         android:textColor="#FFFFFF"
                         android:textSize="28sp"
                         android:textStyle="bold" />
@@ -122,7 +133,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         tools:srcCompat="@drawable/p2hoteleria"
-                        android:scaleType="fitXY" />
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/hotel"/>
 
                     <TextView
                         android:id="@+id/textHotel"
@@ -146,7 +158,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:srcCompat="@drawable/p2otros"
-                    android:scaleType="fitXY" />
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/more"/>
 
                 <TextView
                     android:id="@+id/textMore"
@@ -182,7 +195,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:srcCompat="@drawable/p2eventos"
-                    android:scaleType="fitXY" />
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/events" />
             </LinearLayout>
 
         </LinearLayout>
@@ -203,7 +217,8 @@
             android:backgroundTint="#808080"
             android:src="@drawable/ic_baseline_map_24"
             app:tint="#FFFFFF"
-            tools:ignore="SpeakableTextPresentCheck">
+            tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@string/maps">
 
         </ImageButton>
 

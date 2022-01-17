@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">PayanPrototipe</string>
     <string name="tourism">Turismo</string>
-    <string name="grastronomy">Gastronomía</string>
+    <string name="gastronomy">Gastronomía</string>
     <string name="hotel">Hotelería</string>
     <string name="more">Otros</string>
     <string name="events">Eventos</string>
@@ -13,4 +13,7 @@
     <string name="typicalMeals">Comidas Típicas</string>
     <string name="nightclubs">Discotecas</string>
     <string name="pubs">Bares</string>
+    <string name="menu">Menú</string>
+    <string name="maps">Mapas</string>
+    <string name="user">Usuario</string>
 </resources>

@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/grastronomy"
+                android:text="@string/gastronomy"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
                 android:textStyle="bold" />
