@@ -19,12 +19,12 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/menu"
+                android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_baseline_menu_24"
-                android:contentDescription="@string/menu"/>
+                app:srcCompat="@drawable/ic_baseline_account_circle_24"
+                android:contentDescription="@string/user"/>
         </FrameLayout>
 
         <FrameLayout
@@ -44,12 +44,12 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/menu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_baseline_account_circle_24"
-                android:contentDescription="@string/user"/>
+                app:srcCompat="@drawable/ic_baseline_menu_24"
+                android:contentDescription="@string/menu"/>
         </FrameLayout>
     </LinearLayout>
 
