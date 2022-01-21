@@ -19,7 +19,7 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btnUser"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
@@ -44,7 +44,7 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/menu"
+                android:id="@+id/btnMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
@@ -70,8 +70,10 @@
             <FrameLayout
                 android:id="@+id/btnTourism"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="250dp"
+                android:background="@drawable/p2turismo">
 
+                <!--    IMAGES VIEW SETTINGS
                 <ImageView
                     android:id="@+id/imageTourism"
                     android:layout_width="match_parent"
@@ -79,6 +81,7 @@
                     tools:srcCompat="@drawable/p2turismo"
                     android:scaleType="fitXY"
                     android:contentDescription="@string/tourism"/>
+                -->
 
                 <TextView
                     android:id="@+id/textTourism"
@@ -100,17 +103,11 @@
                 android:baselineAligned="false">
 
                 <FrameLayout
+                    android:id="@+id/btnGastronomy"
                     android:layout_width="0dp"
                     android:layout_height="176dp"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:id="@+id/imageGastronomy"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:srcCompat="@drawable/p2gastronomia"
-                        android:scaleType="fitXY"
-                        android:contentDescription="@string/gastronomy" />
+                    android:layout_weight="1"
+                    android:background="@drawable/p2gastronomia">
 
                     <TextView
                         android:id="@+id/textGastronomy"
@@ -124,17 +121,11 @@
                 </FrameLayout>
 
                 <FrameLayout
+                    android:id="@+id/btnHotel"
                     android:layout_width="0dp"
                     android:layout_height="176dp"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:id="@+id/imageHotel"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:srcCompat="@drawable/p2hoteleria"
-                        android:scaleType="fitXY"
-                        android:contentDescription="@string/hotel"/>
+                    android:layout_weight="1"
+                    android:background="@drawable/p2hoteleria">
 
                     <TextView
                         android:id="@+id/textHotel"
@@ -149,17 +140,11 @@
             </LinearLayout>
 
             <FrameLayout
+                android:id="@+id/btnMore"
                 android:layout_width="match_parent"
                 android:layout_height="103dp"
-                android:layout_marginTop="18dp">
-
-                <ImageView
-                    android:id="@+id/imageMore"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:srcCompat="@drawable/p2otros"
-                    android:scaleType="fitXY"
-                    android:contentDescription="@string/more"/>
+                android:layout_marginTop="18dp"
+                android:background="@drawable/p2otros">
 
                 <TextView
                     android:id="@+id/textMore"
@@ -175,8 +160,9 @@
             </FrameLayout>
 
             <LinearLayout
+                android:id="@+id/btnEvents"
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="550dp"
                 android:orientation="vertical"
                 android:layout_marginTop="18dp">
 
@@ -193,8 +179,8 @@
                 <ImageView
                     android:id="@+id/imageEvents"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:srcCompat="@drawable/p2eventos"
+                    android:layout_height="450dp"
+                    android:src="@drawable/p2eventos"
                     android:scaleType="fitXY"
                     android:contentDescription="@string/events" />
             </LinearLayout>
@@ -212,9 +198,10 @@
         android:background="@color/colorGris">
 
         <ImageButton
+            android:id="@+id/btnMaps"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="#808080"
+            android:background="@null"
             android:src="@drawable/ic_baseline_map_24"
             app:tint="#FFFFFF"
             tools:ignore="SpeakableTextPresentCheck"

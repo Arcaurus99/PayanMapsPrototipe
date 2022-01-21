@@ -14,11 +14,41 @@ class MainMenuActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        btnTourism.setOnClickListener {
-            Toast.makeText(this, "You clicked Tourism", Toast.LENGTH_SHORT).show()
+        btnMenu.setOnClickListener {
+            toastMessage("Menu")
         }
 
+        btnUser.setOnClickListener {
+            toastMessage("User")
+        }
 
+        btnTourism.setOnClickListener {
+            toastMessage("Tourism")
+        }
 
+        btnGastronomy.setOnClickListener {
+            toastMessage("Gastronomy")
+        }
+
+        btnHotel.setOnClickListener {
+            toastMessage("Hotel")
+        }
+
+        btnMore.setOnClickListener {
+            toastMessage("More")
+        }
+
+        btnEvents.setOnClickListener {
+            toastMessage("Events")
+        }
+
+        btnMaps.setOnClickListener {
+            toastMessage("Maps")
+        }
+
+    }
+
+    fun toastMessage(name_option: String) {
+        Toast.makeText(this, "You clicked $name_option", Toast.LENGTH_SHORT).show()
     }
 }
