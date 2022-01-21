@@ -1,9 +1,9 @@
 package edu.unicauca.payanmapsprototipe
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main_menu.*
 
 class MainMenuActivity : AppCompatActivity(){
@@ -14,8 +14,15 @@ class MainMenuActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        btnMenu.setOnClickListener {
-            toastMessage("Menu")
+        btnMaps.setOnClickListener {
+
+            val intent = Intent(this@MainMenuActivity, MapsActivity::class.java)
+            startActivity(intent)
+
+            //toastMessage("Maps")
+        }
+
+        btnMenu.setOnClickListener {toastMessage("Menu")
         }
 
         btnUser.setOnClickListener {
@@ -40,10 +47,6 @@ class MainMenuActivity : AppCompatActivity(){
 
         btnEvents.setOnClickListener {
             toastMessage("Events")
-        }
-
-        btnMaps.setOnClickListener {
-            toastMessage("Maps")
         }
 
     }
