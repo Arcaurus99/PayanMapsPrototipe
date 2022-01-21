@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Payan</string>
     <string name="title_activity_maps">Payan_Map</string>
+    <string name="arrowBack">Arrow Back</string>
 
     <!-- TITLES MAIN -->
     <string name="tourism">Tourism</string>

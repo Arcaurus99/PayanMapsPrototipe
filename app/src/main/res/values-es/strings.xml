@@ -16,4 +16,5 @@
     <string name="menu">Menú</string>
     <string name="maps">Mapas</string>
     <string name="user">Usuario</string>
+    <string name="arrowBack">Flecha Atras</string>
 </resources>
