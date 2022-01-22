@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <ImageButton
+                android:id="@+id/btnUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24"
+                android:contentDescription="@string/user"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="272dp"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/imageLogoApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/base"
+                android:contentDescription="@string/app_name"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_baseline_menu_24"
+                android:contentDescription="@string/menu"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/navBar">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/guide1"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2gastronomia">
+
+                    <TextView
+                        android:id="@+id/guide1txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/guide2"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2hoteleria">
+
+                    <TextView
+                        android:id="@+id/guide2txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/guide3"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2hoteleria">
+
+                    <TextView
+                        android:id="@+id/guide3txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/guide4"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2gastronomia">
+
+                    <TextView
+                        android:id="@+id/guide4txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/guide5"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2gastronomia">
+
+                    <TextView
+                        android:id="@+id/guide5txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/guide6"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2hoteleria">
+
+                    <TextView
+                        android:id="@+id/guide6txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/guide7"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2hoteleria">
+
+                    <TextView
+                        android:id="@+id/guide7txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/guide8"
+                    android:layout_width="0dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/p2gastronomia">
+
+                    <TextView
+                        android:id="@+id/guide8txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/guide"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

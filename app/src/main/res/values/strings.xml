@@ -15,6 +15,7 @@
     <!-- TITLES TOURISM WINDOW -->
     <string name="ecoGuide">Ecologic Guide</string>
     <string name="cityGuide">City Guide</string>
+    <string name="guide">Guide</string>
 
     <!-- TITLES GASTRONOMY WINDOW -->
     <string name="restaurants">Restaurants</string>
