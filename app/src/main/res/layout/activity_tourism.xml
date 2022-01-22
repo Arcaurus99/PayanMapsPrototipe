@@ -18,11 +18,13 @@
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/menu"
+            <ImageButton
+                android:id="@+id/btnUser"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="M" />
+                android:background="@null"
+                app:srcCompat="@drawable/ic_baseline_arrow_back"
+                android:contentDescription="@string/arrowBack" />
         </FrameLayout>
 
         <FrameLayout
@@ -50,7 +52,7 @@
                 android:id="@+id/search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="S" />
+                android:text="M" />
         </FrameLayout>
     </LinearLayout>
 
@@ -62,49 +64,61 @@
         app:layout_constraintTop_toBottomOf="@+id/navBar"
         tools:layout_editor_absoluteX="0dp">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="270dp">
 
-
-            <ImageView
-                android:id="@+id/imageEcoGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-            <TextView
-                android:id="@+id/textEcoGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="@string/ecoGuide"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
+        <!-- Necesitamos:
+        Dar nombre (ID) a todos los elementos Frame (Marco)
+        android:id="@+id/btn<<Nombre>>"
+        Eliminar ImageView y asignar la imagen como fondo
+        android:background="@drawable/<<numeroPantalla>><<Nombre>>"
+        -->
 
         <FrameLayout
+            android:id="@+id/btnEcologicGuide"
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:layout_marginTop="36dp">
+            android:background="@drawable/p3ecologia">
 
-            <ImageView
-                android:id="@+id/imageCityGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        <!--
+      <ImageView
+          android:id="@+id/imageEcoGuide"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:srcCompat="@tools:sample/backgrounds/scenic" />
+      -->
+      <TextView
+          android:id="@+id/textEcoGuide"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:text="@string/ecoGuide"
+          android:textColor="#FFFFFF"
+          android:textSize="40sp"
+          android:textStyle="bold" />
+  </FrameLayout>
 
-            <TextView
-                android:id="@+id/textCityGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="@string/cityGuide"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-    </LinearLayout>
+  <FrameLayout
+      android:="@+id/btnpopayan"
+      android:layout_width="match_parent"
+      android:layout_height="270dp"
+      android:layout_marginTop="36dp"
+      android:background="@drawable/p3popayan">
+<!--
+      <ImageView
+          android:id="@+id/imageCityGuide"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:srcCompat="@tools:sample/backgrounds/scenic" />
+-->
+      <TextView
+          android:id="@+id/textCityGuide"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:text="@string/cityGuide"
+          android:textColor="#FFFFFF"
+          android:textSize="40sp"
+          android:textStyle="bold" />
+  </FrameLayout>
+</LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
