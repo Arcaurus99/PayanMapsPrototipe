@@ -12,6 +12,16 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#000000</color>
+    <color name="black_tr">#4D000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- ECO GUIDES -->
+    <color name="green_eco">#00CE0B</color>
+    <color name="green_dark_eco">#00A008</color>
+
+    <!-- RESTAURANTS -->
+    <color name="orange_rest">#EF6F46</color>
+    <color name="orange_dark_rest">#B5431E</color>
+
 </resources>
