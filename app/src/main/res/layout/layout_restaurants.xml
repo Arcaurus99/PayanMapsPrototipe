@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_menu_24"
+                app:srcCompat="@drawable/ic_search_24"
                 android:contentDescription="@string/menu"/>
         </FrameLayout>
     </LinearLayout>
@@ -141,7 +141,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:gravity="center_horizontal"
-                            android:text="@string/guide"
+                            android:text="@string/option"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -222,7 +222,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
                         android:gravity="center_horizontal"
-                        android:text="@string/guide"
+                        android:text="@string/option"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -304,7 +304,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="0.7"
                         android:gravity="center_horizontal"
-                        android:text="@string/guide"
+                        android:text="@string/option"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
                         android:textStyle="bold" />

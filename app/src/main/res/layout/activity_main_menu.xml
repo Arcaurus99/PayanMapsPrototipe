@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_account_circle_24"
+                app:srcCompat="@drawable/ic_menu_24"
                 android:contentDescription="@string/user"/>
         </FrameLayout>
 
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_menu_24"
+                app:srcCompat="@drawable/ic_account_circle_24"
                 android:contentDescription="@string/menu"/>
         </FrameLayout>
     </LinearLayout>
