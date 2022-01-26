@@ -21,12 +21,16 @@
     <!-- TITLES GASTRONOMY WINDOW -->
     <string name="restaurants">Restaurants</string>
     <string name="typicalMeals">Typical Meals</string>
+    <string name="option">Option</string>
+
+    <!-- TITLES HOTEL WINDOW -->
 
     <!-- TITLES OTHERS WINDOW -->
     <string name="nightclubs">Nightclubs</string>
     <string name="pubs">Pubs</string>
 
     <!-- OPTIONS -->
+    <string name="category">Category</string>
     <string name="suggestions">Suggestions</string>
 
     <!-- ACTIONS -->
