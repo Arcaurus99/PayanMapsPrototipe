@@ -69,16 +69,19 @@
         tools:layout_editor_absoluteX="0dp">
 
         <FrameLayout
+            android:id="@+id/btnRestaurants"
             android:layout_width="match_parent"
-            android:layout_height="270dp">
+            android:layout_height="270dp"
+            android:background="@drawable/p3restaurante">
 
+<!--
 
             <ImageView
                 android:id="@+id/imageRestaurants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
+-->
             <TextView
                 android:id="@+id/textRestaurants"
                 android:layout_width="match_parent"
@@ -91,16 +94,18 @@
         </FrameLayout>
 
         <FrameLayout
+            android:id="@+id/btnTypicalMeals"
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:layout_marginTop="36dp">
-
+            android:layout_marginTop="36dp"
+            android:background="@drawable/p3comida_tipica">
+<!--
             <ImageView
                 android:id="@+id/imageTypMeals"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
+-->
             <TextView
                 android:id="@+id/textTypMeals"
                 android:layout_width="match_parent"
