@@ -16,6 +16,9 @@
     <color name="black_tr">#4D000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- CATEGORIAS -->
+    <color name="category">#3F51B5</color>
+
     <!-- ECO GUIDES -->
     <color name="green_eco">#00CE0B</color>
     <color name="green_dark_eco">#00A008</color>

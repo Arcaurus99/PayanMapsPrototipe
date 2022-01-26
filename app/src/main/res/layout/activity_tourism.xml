@@ -23,8 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_arrow_back"
-                android:contentDescription="@string/arrowBack" />
+                android:contentDescription="@string/arrowBack"
+                app:srcCompat="@drawable/ic_arrow_back" />
         </FrameLayout>
 
         <FrameLayout
@@ -36,23 +36,27 @@
                 android:id="@+id/textTitleW"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/category"
                 android:gravity="center"
                 android:text="@string/tourism"
+                android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:background="@drawable/corners_rounded"/>
+                tools:ignore="TextContrastCheck" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/search"
+            <ImageButton
+                android:id="@+id/btnMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="M" />
+                android:background="@null"
+                app:srcCompat="@drawable/ic_menu_24"
+                android:contentDescription="@string/menu"/>
         </FrameLayout>
     </LinearLayout>
 
