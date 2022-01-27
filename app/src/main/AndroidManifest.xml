@@ -14,11 +14,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.PayanMapsPrototipe">
-
+        <activity
+            android:name=".MoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TourismActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GastronomyActivity"
+            android:exported="false" />
         <activity
             android:name=".MapsActivity"
             android:exported="false" />
-
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -39,6 +49,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

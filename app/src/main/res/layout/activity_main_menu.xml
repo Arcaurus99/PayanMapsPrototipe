@@ -149,7 +149,8 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:text="@string/more"
-                    android:paddingLeft="40dp"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="0dp"
                     android:textColor="#FFFFFF"
                     android:textSize="28sp"
                     android:textStyle="bold" />

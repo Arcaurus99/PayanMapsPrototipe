@@ -19,7 +19,7 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/btnUser"
+                android:id="@+id/btnBack"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
@@ -51,7 +51,7 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/btnMenu"
+                android:id="@+id/btnSearch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
@@ -82,47 +82,34 @@
             android:layout_height="270dp"
             android:background="@drawable/p3ecologia">
 
-        <!--
-      <ImageView
-          android:id="@+id/imageEcoGuide"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          tools:srcCompat="@tools:sample/backgrounds/scenic" />
-      -->
-      <TextView
-          android:id="@+id/textEcoGuide"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:gravity="center"
-          android:text="@string/ecoGuide"
-          android:textColor="#FFFFFF"
-          android:textSize="40sp"
-          android:textStyle="bold" />
-  </FrameLayout>
+            <TextView
+                android:id="@+id/textEcoGuide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/ecoGuide"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-  <FrameLayout
-      android:="@+id/btnpopayan"
-      android:layout_width="match_parent"
-      android:layout_height="270dp"
-      android:layout_marginTop="36dp"
-      android:background="@drawable/p3popayan">
-<!--
-      <ImageView
-          android:id="@+id/imageCityGuide"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          tools:srcCompat="@tools:sample/backgrounds/scenic" />
--->
-      <TextView
-          android:id="@+id/textCityGuide"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:gravity="center"
-          android:text="@string/cityGuide"
-          android:textColor="#FFFFFF"
-          android:textSize="40sp"
-          android:textStyle="bold" />
-  </FrameLayout>
-</LinearLayout>
+        <FrameLayout
+            android:id="@+id/btnPopayan"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/p3popayan">
+
+            <TextView
+                android:id="@+id/textCityGuide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/cityGuide"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

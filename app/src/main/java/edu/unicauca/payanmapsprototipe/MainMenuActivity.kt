@@ -14,37 +14,51 @@ class MainMenuActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        btnMaps.setOnClickListener {
-
-            val intent = Intent(this@MainMenuActivity, MapsActivity::class.java)
-            startActivity(intent)
-
-            //toastMessage("Maps")
-        }
-
-        btnMenu.setOnClickListener {toastMessage("Menu")
+        //-------- MENU AND USER BUTTONS --------
+        btnMenu.setOnClickListener {
+            toastMessage("Menu")
         }
 
         btnUser.setOnClickListener {
             toastMessage("User")
         }
 
+        //-------- MAPS --------
+        btnMaps.setOnClickListener {
+            startActivity(Intent(this@MainMenuActivity, MapsActivity::class.java))
+
+            //toastMessage("Maps")
+        }
+
+        //-------- TOURISM --------
         btnTourism.setOnClickListener {
-            toastMessage("Tourism")
+            startActivity(Intent(this@MainMenuActivity, TourismActivity::class.java))
+
+            //toastMessage("Tourism")
         }
 
+        //-------- GASTRONOMY --------
         btnGastronomy.setOnClickListener {
-            toastMessage("Gastronomy")
+            startActivity(Intent(this@MainMenuActivity, GastronomyActivity::class.java))
+
+            //toastMessage("Gastronomy")
         }
 
+        //-------- HOTEL --------
         btnHotel.setOnClickListener {
-            toastMessage("Hotel")
+            startActivity(Intent(this@MainMenuActivity, HotelActivity::class.java))
+
+            //toastMessage("Hotel")
         }
 
+        //-------- MORE --------
         btnMore.setOnClickListener {
-            toastMessage("More")
+            startActivity(Intent(this@MainMenuActivity, MoreActivity::class.java))
+
+            //toastMessage("More")
         }
 
+        //-------- EVENTS --------
         btnEvents.setOnClickListener {
             toastMessage("Events")
         }
