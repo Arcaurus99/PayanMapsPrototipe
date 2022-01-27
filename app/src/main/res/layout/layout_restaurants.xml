@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <ImageButton
+                android:id="@+id/btnUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="@string/arrowBack"
+                app:srcCompat="@drawable/ic_arrow_back" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="242dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/textTitleW"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/orange_rest"
+                android:gravity="center"
+                android:text="@string/restaurants"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlanco"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_search_24"
+                android:contentDescription="@string/menu"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/slideBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navBar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnRestaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/restaurants"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnTypicalMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/typicalMeals"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnSuggestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/suggestions"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/slideBar">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/p2turismo"
+                android:layout_marginTop="0dp">
+
+                <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent"
+                        android:background="@color/black_tr"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="end">
+
+                        <TextView
+                            android:id="@+id/option1txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center_horizontal"
+                            android:text="@string/option"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/option1btnSearch"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.25"
+                                android:background="@null"
+                                android:contentDescription="@string/search"
+                                app:srcCompat="@drawable/ic_search_24"
+                                app:tint="#FFFFFF"
+                                tools:ignore="DuplicateSpeakableTextCheck,NestedWeights,TouchTargetSizeCheck" />
+
+                            <ImageButton
+                                android:id="@+id/option1btnLocation"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.25"
+                                android:background="@null"
+                                android:contentDescription="@string/location"
+                                app:srcCompat="@drawable/ic_location_on_24"
+                                app:tint="#FFFFFF"
+                                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                            <ImageButton
+                                android:id="@+id/option1btnPhone"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.25"
+                                android:background="@null"
+                                android:contentDescription="@string/phone"
+                                app:srcCompat="@drawable/ic_phone_24"
+                                app:tint="#FFFFFF"
+                                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                            <ImageButton
+                                android:id="@+id/option1btnMail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.25"
+                                android:background="@null"
+                                android:contentDescription="@string/mail"
+                                app:srcCompat="@drawable/ic_mail_outline_24"
+                                app:tint="#FFFFFF"
+                                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/p2hoteleria"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent"
+                    android:background="@color/black_tr"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/option2txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_horizontal"
+                        android:text="@string/option"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/option2btnSearch"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/search"
+                            app:srcCompat="@drawable/ic_search_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="DuplicateSpeakableTextCheck,NestedWeights,TouchTargetSizeCheck" />
+
+                        <ImageButton
+                            android:id="@+id/option2btnLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/location"
+                            app:srcCompat="@drawable/ic_location_on_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:id="@+id/option2btnPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/phone"
+                            app:srcCompat="@drawable/ic_phone_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:id="@+id/option2btnMail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/mail"
+                            app:srcCompat="@drawable/ic_mail_outline_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/p2gastronomia"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent"
+                    android:background="@color/black_tr"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/option3txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_horizontal"
+                        android:text="@string/option"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/option3btnSearch"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/search"
+                            app:srcCompat="@drawable/ic_search_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="DuplicateSpeakableTextCheck,NestedWeights,TouchTargetSizeCheck" />
+
+                        <ImageButton
+                            android:id="@+id/option3btnLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/location"
+                            app:srcCompat="@drawable/ic_location_on_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:id="@+id/option3btnPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/phone"
+                            app:srcCompat="@drawable/ic_phone_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:id="@+id/option3btnMail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@null"
+                            android:contentDescription="@string/mail"
+                            app:srcCompat="@drawable/ic_mail_outline_24"
+                            app:tint="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,39 +18,45 @@
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/menu"
+            <ImageButton
+                android:id="@+id/btnUser"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="M" />
+                android:background="@null"
+                android:contentDescription="@string/arrowBack"
+                app:srcCompat="@drawable/ic_arrow_back" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="242dp"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:background="#000">
+            android:layout_margin="15dp">
 
             <TextView
                 android:id="@+id/textTitleW"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/category"
                 android:gravity="center"
                 android:text="@string/gastronomy"
+                android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/search"
+            <ImageButton
+                android:id="@+id/btnMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="S" />
+                android:background="@null"
+                app:srcCompat="@drawable/ic_search_24"
+                android:contentDescription="@string/menu"/>
         </FrameLayout>
     </LinearLayout>
 
@@ -63,16 +69,19 @@
         tools:layout_editor_absoluteX="0dp">
 
         <FrameLayout
+            android:id="@+id/btnRestaurants"
             android:layout_width="match_parent"
-            android:layout_height="270dp">
+            android:layout_height="270dp"
+            android:background="@drawable/p3restaurante">
 
+<!--
 
             <ImageView
                 android:id="@+id/imageRestaurants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
+-->
             <TextView
                 android:id="@+id/textRestaurants"
                 android:layout_width="match_parent"
@@ -85,16 +94,18 @@
         </FrameLayout>
 
         <FrameLayout
+            android:id="@+id/btnTypicalMeals"
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:layout_marginTop="36dp">
-
+            android:layout_marginTop="36dp"
+            android:background="@drawable/p3comida_tipica">
+<!--
             <ImageView
                 android:id="@+id/imageTypMeals"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
+-->
             <TextView
                 android:id="@+id/textTypMeals"
                 android:layout_width="match_parent"

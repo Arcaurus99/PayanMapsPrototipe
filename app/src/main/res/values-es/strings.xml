@@ -16,4 +16,13 @@
     <string name="menu">Menú</string>
     <string name="maps">Mapas</string>
     <string name="user">Usuario</string>
+    <string name="guide">Guía</string>
+    <string name="arrowBack">Flecha Atras</string>
+    <string name="search">Search</string>
+    <string name="location">Location</string>
+    <string name="phone">Phone</string>
+    <string name="mail">Mail</string>
+    <string name="suggestions">Sugerencias</string>
+    <string name="option">Opción</string>
+    <string name="category">Categoría</string>
 </resources>
