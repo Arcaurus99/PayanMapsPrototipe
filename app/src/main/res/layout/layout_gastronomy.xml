@@ -36,9 +36,9 @@
                 android:id="@+id/textTitleW"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/category"
+                android:background="@color/orange_rest"
                 android:gravity="center"
-                android:text="@string/gastronomy"
+                android:text="@string/restaurants"
                 android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
@@ -119,48 +119,15 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/fragmentsConteiner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/navBar"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideBar">
 
-        <FrameLayout
-            android:id="@+id/btnRes"
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:background="@drawable/p3restaurante">
-
-            <TextView
-                android:id="@+id/textRestaurants"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="@string/restaurants"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/btnTypMeals"
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:layout_marginTop="36dp"
-            android:background="@drawable/p3comida_tipica">
-
-            <TextView
-                android:id="@+id/textTypMeals"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="@string/typicalMeals"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-    </LinearLayout>
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
