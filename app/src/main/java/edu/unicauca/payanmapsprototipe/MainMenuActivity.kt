@@ -39,7 +39,7 @@ class MainMenuActivity : AppCompatActivity(){
 
         //-------- GASTRONOMY --------
         btnGastronomy.setOnClickListener {
-            startActivity(Intent(this@MainMenuActivity, GastronomyActivity::class.java))
+            startActivity(Intent(this@MainMenuActivity, GastronomyActivity_Options::class.java))
 
             //toastMessage("Gastronomy")
         }

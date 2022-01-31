@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/corners_rounded.xml" value="0.3578125" />
         <entry key="app/src/main/res/drawable/splash_screen.xml" value="0.37135416666666665" />
-        <entry key="app/src/main/res/layout/activity_gastronomy.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_gastronomy.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_gastronomy2.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/activity_hotel.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/activity_hotel2.xml" value="0.35520833333333335" />
@@ -21,6 +21,7 @@
         <entry key="app/src/main/res/layout/fragment_restaurants.xml" value="0.23529411764705882" />
         <entry key="app/src/main/res/layout/fragment_tipical_meals.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/layout_ecologic_guide.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/layout_gastronomy.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/layout_hotel.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/layout_restaurados.xml" value="0.335" />
         <entry key="app/src/main/res/layout/layout_restaurants.xml" value="0.35520833333333335" />
