@@ -4,40 +4,31 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.layout_gastronomy_options.*
+import kotlinx.android.synthetic.main.activity_gastronomy.*
 
 class GastronomyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gastronomy)
 
-        var fragment = intent.getStringExtra(frag)
+        // --------- FRAGMENTS ---------
+        val fragment = intent.getStringExtra("frag")
+
+        displayFragment(fragment.toString())
 
         // -------- BACK BUTTON --------
         btnBack.setOnClickListener {
             onBackPressed()
         }
 
-        if (fragment == "FragmentGRestaurants") {
-            replaceFragment(FragmentGRestaurants())
-        } else if(fragment == "FragmentGTypicalMeals") {
-            replaceFragment(FragmentGTypicalMeals())
-        } else {
-            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+        // -------- SLIDE BAR BUTTONS ---------
+        btnRestaurants.setOnClickListener {
+            displayFragment("GastronomyFragmentRestaurants")
+        }
+        btnTraditionalFoods.setOnClickListener {
+            displayFragment("GastronomyFragmentTraditionalFoods")
         }
 
-        /*// -------- LAYOUTS --------
-        btnRes.setOnClickListener {
-            replaceFragment(FragmentGRestaurants())
-            //displayLayout("restaurant")
-            //Toast.makeText(this, "Restaurants", Toast.LENGTH_SHORT).show()
-        }
-
-        btnTypMeals.setOnClickListener {
-            replaceFragment(FragmentGTypicalMeals())
-            //displayLayout("typicalMeals")
-            //Toast.makeText(this, "TypicalMeals", Toast.LENGTH_SHORT).show()
-        }*/
     }
 
     private fun replaceFragment(fragment : Fragment) {
@@ -46,4 +37,21 @@ class GastronomyActivity : AppCompatActivity() {
         fragmentTransaction.replace(R.id.fragmentsContainer, fragment)
         fragmentTransaction.commit()
     }
+
+    private fun displayFragment(fragment : String) {
+
+        if (fragment == "GastronomyFragmentRestaurants") {
+            replaceFragment(GastronomyFragmentRestaurants())
+            textTitle.setText(R.string.restaurants)
+            textTitle.setBackgroundResource(R.color.orange_rest)
+        } else if(fragment == "GastronomyFragmentTraditionalFoods") {
+            replaceFragment(GastronomyFragmentTraditionalFoods())
+            textTitle.setText(R.string.traditionalFoods)
+            textTitle.setBackgroundResource(R.color.blue_shore)
+        } else {
+            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+        }
+
+    }
+
 }

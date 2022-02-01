@@ -26,35 +26,30 @@ class MainMenuActivity : AppCompatActivity(){
         //-------- MAPS --------
         btnMaps.setOnClickListener {
             startActivity(Intent(this@MainMenuActivity, MapsActivity::class.java))
-
             //toastMessage("Maps")
         }
 
         //-------- TOURISM --------
         btnTourism.setOnClickListener {
             startActivity(Intent(this@MainMenuActivity, TourismActivity::class.java))
-
             //toastMessage("Tourism")
         }
 
         //-------- GASTRONOMY --------
         btnGastronomy.setOnClickListener {
-            startActivity(Intent(this@MainMenuActivity, GastronomyActivity_Options::class.java))
-
+            startActivity(Intent(this@MainMenuActivity, GastronomyActivityOptions::class.java))
             //toastMessage("Gastronomy")
         }
 
         //-------- HOTEL --------
         btnHotel.setOnClickListener {
             startActivity(Intent(this@MainMenuActivity, HotelActivity::class.java))
-
             //toastMessage("Hotel")
         }
 
         //-------- MORE --------
         btnMore.setOnClickListener {
-            startActivity(Intent(this@MainMenuActivity, MoreActivity::class.java))
-
+            startActivity(Intent(this@MainMenuActivity, MoreActivityOptions::class.java))
             //toastMessage("More")
         }
 

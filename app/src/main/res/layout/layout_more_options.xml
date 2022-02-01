@@ -33,12 +33,12 @@
             android:layout_margin="15dp">
 
             <TextView
-                android:id="@+id/textTitle"
+                android:id="@+id/textTitleW"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/category"
                 android:gravity="center"
-                android:text="@string/gastronomy"
+                android:text="@string/more"
                 android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
@@ -61,43 +61,43 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/fragmentsContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/navBar"
         tools:layout_editor_absoluteX="0dp">
 
         <FrameLayout
-            android:id="@+id/btnRes"
+            android:id="@+id/btnNightclubs"
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:background="@drawable/p3restaurante">
+            android:background="@drawable/p3ecologia">
 
             <TextView
-                android:id="@+id/textRestaurants"
+                android:id="@+id/textNightclubs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/restaurants"
+                android:text="@string/nightclubs"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp"
                 android:textStyle="bold" />
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/btnTraditionalFoods"
+            android:id="@+id/btnPubs"
             android:layout_width="match_parent"
             android:layout_height="270dp"
             android:layout_marginTop="36dp"
-            android:background="@drawable/p3comida_tipica">
+            android:background="@drawable/p3popayan">
 
             <TextView
-                android:id="@+id/textTraditionalFoods"
+                android:id="@+id/textPubs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/traditionalFoods"
+                android:text="@string/pubs"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp"
                 android:textStyle="bold" />

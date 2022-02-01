@@ -23,8 +23,13 @@
     <color name="green_eco">#00CE0B</color>
     <color name="green_dark_eco">#00A008</color>
 
-    <!-- RESTAURANTS -->
+    <!-- GASTRONOMY
+    - Restaurants
+    - Traditional Foods -->
     <color name="orange_rest">#EF6F46</color>
     <color name="orange_dark_rest">#B5431E</color>
+    <color name="blue_shore">#00BCD4</color>
+    <color name="blue_shore_dark">#008697</color>
+
 
 </resources>

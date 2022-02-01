@@ -1,115 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:id="@+id/navBar"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <FrameLayout
-            android:layout_width="70dp"
-            android:layout_height="70dp">
-
-            <ImageButton
-                android:id="@+id/btnBack"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@null"
-                app:srcCompat="@drawable/ic_arrow_back"
-                android:contentDescription="@string/arrowBack" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="242dp"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp">
-
-            <TextView
-                android:id="@+id/textTitleW"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/category"
-                android:gravity="center"
-                android:text="@string/hotel"
-                android:textAllCaps="true"
-                android:textColor="@color/colorBlanco"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="70dp"
-            android:layout_height="70dp">
-
-            <ImageButton
-                android:id="@+id/btnSearch"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@null"
-                app:srcCompat="@drawable/ic_search_24"
-                android:contentDescription="@string/menu"/>
-        </FrameLayout>
-    </LinearLayout>
-
-    <HorizontalScrollView
-        android:id="@+id/slideBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navBar">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/btnCategories"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/category"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="5dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/btnRestaurants"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Hotels"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="5dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/btnSuggestions"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/suggestions"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="5dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-        </LinearLayout>
-    </HorizontalScrollView>
+    android:layout_height="match_parent"
+    tools:context=".GastronomyActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/slideBar">
 
         <LinearLayout
@@ -129,7 +28,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p2turismo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -194,7 +93,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:gravity="center"
-                            android:text="@string/guide"
+                            android:text="@string/option"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -207,7 +106,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2hoteleria">
+                    android:background="@drawable/p2gastronomia">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -272,7 +171,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:gravity="center"
-                            android:text="@string/guide"
+                            android:text="@string/option"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -293,7 +192,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2hoteleria">
+                    android:background="@drawable/p2gastronomia">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -358,7 +257,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:gravity="center"
-                            android:text="@string/guide"
+                            android:text="@string/option"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -370,7 +269,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p2turismo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -435,7 +334,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:gravity="center"
-                            android:text="@string/guide"
+                            android:text="@string/option"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -456,7 +355,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p2turismo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -521,7 +420,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:gravity="center"
-                            android:text="@string/guide"
+                            android:text="@string/option"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -534,7 +433,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2hoteleria">
+                    android:background="@drawable/p2gastronomia">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -599,7 +498,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.7"
                             android:gravity="center"
-                            android:text="@string/guide"
+                            android:text="@string/option"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -611,4 +510,4 @@
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
