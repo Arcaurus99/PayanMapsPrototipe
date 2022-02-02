@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "603941032408",
+    "project_id": "payanmapsprototipe",
+    "storage_bucket": "payanmapsprototipe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603941032408:android:9a8a698460eb55a64d62ad",
+        "android_client_info": {
+          "package_name": "edu.unicauca.payanmapsprototipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603941032408-f6lnpr70asove0s3tst7cugsssic1o10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIDuuGsXN5KfHAgrny6p_UP070aBYeE4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603941032408-f6lnpr70asove0s3tst7cugsssic1o10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
