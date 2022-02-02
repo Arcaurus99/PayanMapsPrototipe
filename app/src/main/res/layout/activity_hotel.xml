@@ -370,7 +370,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p2hotelcamino">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -456,7 +456,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p2san_martin">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -534,7 +534,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2hoteleria">
+                    android:background="@drawable/p2foto_dann">
 
                     <LinearLayout
                         android:layout_width="match_parent"

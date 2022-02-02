@@ -38,7 +38,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/category"
                 android:gravity="center"
-                android:text="@string/hotel"
+                android:text="@string/ecoGuide"
                 android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
