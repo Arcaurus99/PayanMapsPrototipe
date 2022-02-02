@@ -16,7 +16,7 @@
             android:id="@+id/option1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/p2turismo"
+            android:background="@drawable/p4ranchogrande"
             android:layout_marginTop="0dp">
 
             <LinearLayout
@@ -97,7 +97,7 @@
             android:id="@+id/option2"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/p2hoteleria"
+            android:background="@drawable/p4carantanta"
             android:layout_marginTop="10dp">
 
             <LinearLayout
@@ -179,7 +179,7 @@
             android:id="@+id/option3"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/p2gastronomia"
+            android:background="@drawable/p4mestizo"
             android:layout_marginTop="10dp">
 
             <LinearLayout
