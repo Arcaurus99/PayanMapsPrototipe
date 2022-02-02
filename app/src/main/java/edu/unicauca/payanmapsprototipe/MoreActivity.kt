@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.activity_gastronomy.*
-import kotlinx.android.synthetic.main.activity_gastronomy.btnBack
+import kotlinx.android.synthetic.main.activity_more.*
 
 class MoreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,18 +21,13 @@ class MoreActivity : AppCompatActivity() {
             onBackPressed()
         }
 
-
-        /*
-
         // -------- SLIDE BAR BUTTONS ---------
-        btnRestaurants.setOnClickListener {
-            displayFragment("GastronomyFragmentRestaurants")
+        btnNightclubs.setOnClickListener {
+            displayFragment("MoreFragmentNightclubs")
         }
-        btnTraditionalFoods.setOnClickListener {
-            displayFragment("GastronomyFragmentTraditionalFoods")
+        btnPubs.setOnClickListener {
+            displayFragment("MoreFragmentPubs")
         }
-
-        */
 
     }
 

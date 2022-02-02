@@ -31,7 +31,7 @@ class MainMenuActivity : AppCompatActivity(){
 
         //-------- TOURISM --------
         btnTourism.setOnClickListener {
-            startActivity(Intent(this@MainMenuActivity, TourismActivity::class.java))
+            startActivity(Intent(this@MainMenuActivity, TourismActivityOptions::class.java))
             //toastMessage("Tourism")
         }
 

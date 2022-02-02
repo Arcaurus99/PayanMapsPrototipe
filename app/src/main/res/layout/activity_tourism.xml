@@ -23,8 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                android:contentDescription="@string/arrowBack"
-                app:srcCompat="@drawable/ic_arrow_back" />
+                app:srcCompat="@drawable/ic_arrow_back"
+                android:contentDescription="@string/arrowBack" />
         </FrameLayout>
 
         <FrameLayout
@@ -33,7 +33,7 @@
             android:layout_margin="15dp">
 
             <TextView
-                android:id="@+id/textTitleW"
+                android:id="@+id/textTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/category"
@@ -42,8 +42,7 @@
                 android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                android:textStyle="bold" />
         </FrameLayout>
 
         <FrameLayout
@@ -56,60 +55,78 @@
                 android:layout_height="match_parent"
                 android:background="@null"
                 app:srcCompat="@drawable/ic_search_24"
-                android:contentDescription="@string/menu"/>
+                android:contentDescription="@string/search"/>
         </FrameLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <HorizontalScrollView
+        android:id="@+id/slideBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/navBar"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navBar">
 
-
-        <!-- Necesitamos:
-        Dar nombre (ID) a todos los elementos Frame (Marco)
-        android:id="@+id/btn<<Nombre>>"
-        Eliminar ImageView y asignar la imagen como fondo
-        android:background="@drawable/<<numeroPantalla>><<Nombre>>"
-        -->
-
-        <FrameLayout
-            android:id="@+id/btnEcologicGuide"
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:background="@drawable/p3ecologia">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textEcoGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:id="@+id/btnCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/category"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnEcoGuides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/ecoGuide"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/btnPopayan"
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:layout_marginTop="36dp"
-            android:background="@drawable/p3popayan">
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/textCityGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:id="@+id/btnCityGuides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/cityGuide"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-    </LinearLayout>
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnSuggestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/suggestions"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideBar">
+
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

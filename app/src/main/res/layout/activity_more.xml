@@ -86,7 +86,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/btnRestaurants"
+                android:id="@+id/btnNightclubs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -97,7 +97,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/btnTraditionalFoods"
+                android:id="@+id/btnPubs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
