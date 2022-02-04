@@ -28,7 +28,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2turismo">
+                    android:background="@drawable/p4tamales">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p4carantanta">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -192,7 +192,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p4repollitas">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -269,7 +269,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2turismo">
+                    android:background="@drawable/p4empanadasdepipian">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -355,7 +355,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2turismo">
+                    android:background="@drawable/p4envueltos">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -433,7 +433,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2gastronomia">
+                    android:background="@drawable/p4aloja">
 
                     <LinearLayout
                         android:layout_width="match_parent"

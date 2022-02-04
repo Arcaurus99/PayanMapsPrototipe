@@ -25,7 +25,7 @@ class TourismActivityOptions : AppCompatActivity() {
 
         btnCityGuide.setOnClickListener {
             val intent = Intent(this@TourismActivityOptions, TourismActivity::class.java)
-            intent.putExtra("frag", "TourismFragmentEcoGuides")
+            intent.putExtra("frag", "TourismFragmentCityGuides")
             startActivity(intent)
             //Toast.makeText(this, "Pubs", Toast.LENGTH_SHORT).show()
         }

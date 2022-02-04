@@ -28,7 +28,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2turismo">
+                    android:background="@drawable/p4volcanpurace">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2hoteleria">
+                    android:background="@drawable/p4parquenacionalpurace">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -192,7 +192,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2hoteleria">
+                    android:background="@drawable/p4termalescoconuno">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -269,7 +269,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2turismo">
+                    android:background="@drawable/p4charcodelburro">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -355,7 +355,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2turismo">
+                    android:background="@drawable/p4tourbalboa">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -433,7 +433,7 @@
                     android:layout_width="0dp"
                     android:layout_height="176dp"
                     android:layout_weight="1"
-                    android:background="@drawable/p2hoteleria">
+                    android:background="@drawable/p4tierrraadentro">
 
                     <LinearLayout
                         android:layout_width="match_parent"
