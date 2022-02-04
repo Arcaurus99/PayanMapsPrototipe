@@ -18,89 +18,86 @@
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/menu"
+            <ImageButton
+                android:id="@+id/btnBack"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="M" />
+                android:background="@null"
+                android:contentDescription="@string/arrowBack"
+                app:srcCompat="@drawable/ic_arrow_back" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="242dp"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
-            android:background="#000">
+            android:layout_margin="15dp">
 
             <TextView
-                android:id="@+id/textTitleW"
+                android:id="@+id/textTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/category"
                 android:gravity="center"
-                android:text="@string/more"
+                android:text="@string/gastronomy"
+                android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/search"
+            <ImageButton
+                android:id="@+id/btnSearch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="S" />
+                android:background="@null"
+                app:srcCompat="@drawable/ic_search_24"
+                android:contentDescription="@string/menu"/>
         </FrameLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/fragmentsContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/navBar"
         tools:layout_editor_absoluteX="0dp">
 
         <FrameLayout
+            android:id="@+id/btnRes"
             android:layout_width="match_parent"
-            android:layout_height="270dp">
-
-
-            <ImageView
-                android:id="@+id/imageNightclubes"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            android:layout_height="270dp"
+            android:background="@drawable/p3restaurante">
 
             <TextView
-                android:id="@+id/textNightclubes"
+                android:id="@+id/textRestaurants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/nightclubs"
+                android:text="@string/restaurants"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp"
                 android:textStyle="bold" />
         </FrameLayout>
 
         <FrameLayout
+            android:id="@+id/btnTraditionalFoods"
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:layout_marginTop="36dp">
-
-            <ImageView
-                android:id="@+id/imagePubs"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            android:layout_marginTop="36dp"
+            android:background="@drawable/p3comida_tipica">
 
             <TextView
-                android:id="@+id/textPubs"
+                android:id="@+id/textTraditionalFoods"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/pubs"
+                android:text="@string/traditionalFoods"
                 android:textColor="#FFFFFF"
                 android:textSize="40sp"
                 android:textStyle="bold" />

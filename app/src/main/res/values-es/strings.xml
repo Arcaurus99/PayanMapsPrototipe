@@ -10,10 +10,26 @@
     <string name="cityGuide">Guía por Ciudad</string>
     <string name="title_activity_maps">titulo</string>
     <string name="restaurants">Restaurantes</string>
-    <string name="typicalMeals">Comidas Típicas</string>
+    <string name="traditionalFoods">Comidas Típicas</string>
     <string name="nightclubs">Discotecas</string>
     <string name="pubs">Bares</string>
     <string name="menu">Menú</string>
     <string name="maps">Mapas</string>
     <string name="user">Usuario</string>
+    <string name="guide">Guía</string>
+    <string name="arrowBack">Flecha Atras</string>
+    <string name="search">Search</string>
+    <string name="location">Location</string>
+    <string name="phone">Phone</string>
+    <string name="mail">Mail</string>
+    <string name="suggestions">Sugerencias</string>
+    <string name="option">Opción</string>
+    <string name="category">Categoría</string>
+    <string name="name">Nombre</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesion</string>
+    <string name="signup">Registrarse</string>
+    <string name="logout">Cerrar Sesion</string>
+    <string name="provider">Provider</string>
 </resources>

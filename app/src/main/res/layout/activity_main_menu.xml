@@ -19,11 +19,11 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/btnUser"
+                android:id="@+id/btnMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_baseline_account_circle_24"
+                app:srcCompat="@drawable/ic_menu_24"
                 android:contentDescription="@string/user"/>
         </FrameLayout>
 
@@ -44,11 +44,11 @@
             android:layout_height="70dp">
 
             <ImageButton
-                android:id="@+id/btnMenu"
+                android:id="@+id/btnUser"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
-                app:srcCompat="@drawable/ic_baseline_menu_24"
+                app:srcCompat="@drawable/ic_account_circle_24"
                 android:contentDescription="@string/menu"/>
         </FrameLayout>
     </LinearLayout>
@@ -56,16 +56,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/navBar">
+        app:layout_constraintTop_toBottomOf="@+id/navBar"
+        android:scrollbars="none">
 
         <LinearLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/navBar">
+            android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/btnTourism"
@@ -152,7 +150,8 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:text="@string/more"
-                    android:paddingLeft="40dp"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="0dp"
                     android:textColor="#FFFFFF"
                     android:textSize="28sp"
                     android:textStyle="bold" />
@@ -202,7 +201,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:src="@drawable/ic_baseline_map_24"
+            android:src="@drawable/ic_map_24"
             app:tint="#FFFFFF"
             tools:ignore="SpeakableTextPresentCheck"
             android:contentDescription="@string/maps">

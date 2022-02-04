@@ -18,11 +18,13 @@
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/menu"
+            <ImageButton
+                android:id="@+id/btnBack"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="M" />
+                android:background="@null"
+                app:srcCompat="@drawable/ic_arrow_back"
+                android:contentDescription="@string/arrowBack" />
         </FrameLayout>
 
         <FrameLayout
@@ -31,80 +33,101 @@
             android:layout_margin="15dp">
 
             <TextView
-                android:id="@+id/textTitleW"
+                android:id="@+id/textTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/category"
                 android:gravity="center"
                 android:text="@string/tourism"
+                android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:background="@drawable/corners_rounded"/>
+                android:textStyle="bold" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="70dp"
             android:layout_height="70dp">
 
-            <Button
-                android:id="@+id/search"
+            <ImageButton
+                android:id="@+id/btnSearch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="S" />
+                android:background="@null"
+                app:srcCompat="@drawable/ic_search_24"
+                android:contentDescription="@string/search"/>
         </FrameLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <HorizontalScrollView
+        android:id="@+id/slideBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navBar"
-        tools:layout_editor_absoluteX="0dp">
+        android:scrollbars="none">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="270dp">
-
-
-            <ImageView
-                android:id="@+id/imageEcoGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textEcoGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:id="@+id/btnCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/category"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnEcoGuides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/ecoGuide"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:layout_marginTop="36dp">
-
-            <ImageView
-                android:id="@+id/imageCityGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/textCityGuide"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:id="@+id/btnCityGuides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/cityGuide"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-    </LinearLayout>
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnSuggestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/suggestions"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideBar">
+
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

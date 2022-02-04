@@ -38,7 +38,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/category"
                 android:gravity="center"
-                android:text="@string/gastronomy"
+                android:text="@string/more"
                 android:textAllCaps="true"
                 android:textColor="@color/colorBlanco"
                 android:textSize="20sp"
@@ -86,22 +86,22 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/btnRestaurants"
+                android:id="@+id/btnNightclubs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/restaurants"
+                android:text="@string/nightclubs"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="5dp"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/btnTraditionalFoods"
+                android:id="@+id/btnPubs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/traditionalFoods"
+                android:text="@string/pubs"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="5dp"
                 android:textColor="@color/black"

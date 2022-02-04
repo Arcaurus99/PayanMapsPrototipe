@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TourismFragmentCityGuides">
+
+    <FrameLayout
+        android:id="@+id/guide1"
+        android:layout_width="200dp"
+        android:layout_height="176dp"
+        android:layout_weight="1"
+        android:background="@drawable/p2turismo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/guide1btnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:background="@null"
+                    android:contentDescription="@string/search"
+                    app:srcCompat="@drawable/ic_search_24"
+                    app:tint="#FFFFFF"
+                    tools:ignore="DuplicateSpeakableTextCheck,NestedWeights,TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/guide1btnLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:background="@null"
+                    android:contentDescription="@string/location"
+                    app:srcCompat="@drawable/ic_location_on_24"
+                    app:tint="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                <ImageButton
+                    android:id="@+id/guide1btnPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:background="@null"
+                    android:contentDescription="@string/phone"
+                    app:srcCompat="@drawable/ic_phone_24"
+                    app:tint="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                <ImageButton
+                    android:id="@+id/guide1btnMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:background="@null"
+                    android:contentDescription="@string/mail"
+                    app:srcCompat="@drawable/ic_mail_outline_24"
+                    app:tint="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/guide1txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="@string/option"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
