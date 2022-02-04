@@ -26,6 +26,7 @@
         <entry key="app/src/main/res/layout/fragment_restaurants.xml" value="0.23529411764705882" />
         <entry key="app/src/main/res/layout/fragment_tipical_meals.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/fragment_tourism_city_guides.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/fragment_tourism_city_guides_test.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/fragment_tourism_eco_guides.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/fragment_traditional_foods.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/layout_ecologic_guide.xml" value="0.375" />
@@ -37,6 +38,7 @@
         <entry key="app/src/main/res/layout/layout_restaurants.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/layout_tourism_options.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/loadactivity.xml" value="0.2015625" />
+        <entry key="app/src/main/res/layout/recyclerview_tourism_city_guides.xml" value="0.35520833333333335" />
       </map>
     </option>
   </component>

@@ -40,10 +40,12 @@
     <string name="mail">Mail</string>
 
     <!-- AUTH AND ACCOUNTS -->
+    <string name="provider">Provider</string>
+
     <string name="login">Log In</string>
     <string name="signup">Sign Up</string>
     <string name="logout">Log Out</string>
-    <string name="name">Name</string>
+    <string name="name">Full Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
 

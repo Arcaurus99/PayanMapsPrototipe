@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import androidx.appcompat.app.AlertDialog
+import androidx.core.text.set
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_auth.*
 
@@ -11,6 +12,11 @@ class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
+
+        val bundle = intent.extras
+        val email = bundle?.getString("email")
+
+        editTextEmail.setText(email)
 
         setup()
     }
@@ -25,7 +31,7 @@ class AuthActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(editTextEmail.text.toString(),
                     editTextPassword.text.toString()).addOnCompleteListener(this) {
                         if (it.isSuccessful) {
-                            goMainMenu(it.result?.user?.email ?: "", ProviderType.BASIC)
+                            goSignUp(it.result?.user?.email ?: "", ProviderType.BASIC)
                         } else {
                             showAlertRecord()
                         }
@@ -68,6 +74,14 @@ class AuthActivity : AppCompatActivity() {
 
     private fun goMainMenu(email: String, provider: ProviderType) {
         val homeIntent = Intent(this, MainMenuActivity::class.java).apply {
+            putExtra("email", email)
+            putExtra("provider", provider.name)
+        }
+        startActivity(homeIntent)
+    }
+
+    private fun goSignUp(email: String, provider: ProviderType) {
+        val homeIntent = Intent(this, AuthSingUpActivity::class.java).apply {
             putExtra("email", email)
             putExtra("provider", provider.name)
         }

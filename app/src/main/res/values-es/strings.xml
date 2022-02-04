@@ -31,4 +31,5 @@
     <string name="login">Iniciar Sesion</string>
     <string name="signup">Registrarse</string>
     <string name="logout">Cerrar Sesion</string>
+    <string name="provider">Provider</string>
 </resources>
