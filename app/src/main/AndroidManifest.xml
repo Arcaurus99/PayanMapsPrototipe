@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PayanMapsPrototipe">
         <activity
+            android:name=".AuthSingUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
             android:name=".TourismActivity"
             android:exported="false" />
         <activity

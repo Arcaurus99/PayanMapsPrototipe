@@ -25,4 +25,10 @@
     <string name="suggestions">Sugerencias</string>
     <string name="option">Opción</string>
     <string name="category">Categoría</string>
+    <string name="name">Nombre</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesion</string>
+    <string name="signup">Registrarse</string>
+    <string name="logout">Cerrar Sesion</string>
 </resources>

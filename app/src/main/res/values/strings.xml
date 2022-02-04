@@ -38,7 +38,13 @@
     <string name="location">Location</string>
     <string name="phone">Phone</string>
     <string name="mail">Mail</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- AUTH AND ACCOUNTS -->
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="logout">Log Out</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 
 </resources>
