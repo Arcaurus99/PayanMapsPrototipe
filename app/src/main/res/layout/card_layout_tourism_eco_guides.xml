@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/cardView"
     tools:context=".TourismFragmentCityGuides">
 
     <FrameLayout
-        android:id="@+id/guide1"
+        android:id="@+id/frameItem"
         android:layout_width="200dp"
         android:layout_height="176dp"
         android:layout_weight="1"
@@ -26,7 +27,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/guide1btnSearch"
+                    android:id="@+id/btnSearch"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.25"
@@ -37,7 +38,7 @@
                     tools:ignore="DuplicateSpeakableTextCheck,NestedWeights,TouchTargetSizeCheck" />
 
                 <ImageButton
-                    android:id="@+id/guide1btnLocation"
+                    android:id="@+id/btnLocation"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.25"
@@ -48,7 +49,7 @@
                     tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
                 <ImageButton
-                    android:id="@+id/guide1btnPhone"
+                    android:id="@+id/btnPhone"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.25"
@@ -59,7 +60,7 @@
                     tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
                 <ImageButton
-                    android:id="@+id/guide1btnMail"
+                    android:id="@+id/btnMail"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.25"
@@ -71,7 +72,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/guide1txt"
+                android:id="@+id/txtName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.7"
@@ -84,4 +85,4 @@
 
     </FrameLayout>
 
-</FrameLayout>
+</androidx.cardview.widget.CardView>
