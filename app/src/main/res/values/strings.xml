@@ -12,6 +12,7 @@
     <string name="menu">Menu</string>
     <string name="maps">Maps</string>
     <string name="user">User</string>
+    <string name="credits">Credits</string>
 
     <!-- TITLES TOURISM WINDOW -->
     <string name="ecoGuide">Ecologic Guide</string>
@@ -49,4 +50,8 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
 
+    <!-- TITLES CREDITS WINDOW -->
+    <string name="esteban">Esteban Arcos Alvear</string>
+    <string name="andres">Andres Fernando Calderon</string>
+    <string name="kevin">Kevin Grisales Rodriguez</string>
 </resources>

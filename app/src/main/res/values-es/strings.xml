@@ -32,4 +32,8 @@
     <string name="signup">Registrarse</string>
     <string name="logout">Cerrar Sesion</string>
     <string name="provider">Provider</string>
+    <string name="credits">Creditos</string>
+    <string name="esteban">Esteban Arcos Alvear</string>
+    <string name="andres">Andres Fernando Calderon</string>
+    <string name="kevin">Kevin Grisales Rodriguez</string>
 </resources>

@@ -32,7 +32,8 @@ class MainMenuActivity : AppCompatActivity(){
 
         //-------- MENU AND USER BUTTONS --------
         btnMenu.setOnClickListener {
-            toastMessage("Menu")
+            //toastMessage("Menu")
+            startActivity(Intent(this, creditsActivity::class.java))
         }
 
         btnUser.setOnClickListener {
